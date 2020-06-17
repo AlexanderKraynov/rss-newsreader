@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'RssNewsreaderApp' do
+  use_frameworks!
+  pod 'SwiftLint'
+  pod 'DeepDiff'
+end
