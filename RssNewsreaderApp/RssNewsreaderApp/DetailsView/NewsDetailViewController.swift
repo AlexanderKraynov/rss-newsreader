@@ -19,6 +19,8 @@ class NewsDetailViewController: UIViewController {
         guard let item = item else {
             return
         }
+        titleLabel.text = item.title
+        fullTextLabel.text = item.fullText
         guard let imageURL = URL(string: item.photoUrl ?? "") else {
             return
         }
@@ -31,7 +33,5 @@ class NewsDetailViewController: UIViewController {
             }
         }
         .resume()
-        titleLabel.text = item.title
-        fullTextLabel.text = item.fullText
     }
 }
